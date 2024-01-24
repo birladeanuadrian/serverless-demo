@@ -1,0 +1,18 @@
+{
+  "name": "osiris-api",
+  "version": "1.0.0",
+  "description": "Example of a Python Flask API service with traditional Serverless Framework",
+  "author": "",
+  "scripts": {
+    "deploy": "sls deploy",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "pylint": "pylint --disable=missing-docstring,invalid-name app/ tests/",
+    "black": "black --line-length 100 app/ tests/",
+    "isort": "isort --line-length 100 app/ tests/",
+    "bandit": "bandit -r app/ tests/"
+  },
+  "devDependencies": {
+    "serverless-python-requirements": "^6.0.0",
+    "serverless-wsgi": "^3.0.2"
+  }
+}
